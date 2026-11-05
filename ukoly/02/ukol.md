@@ -39,7 +39,7 @@ namespace ConsoleApp1
                         string name = Console.ReadLine();
 
                         Console.WriteLine("Jaký rok ses narodil?");
-                        if (!int.TryParse(Console.ReadLine(), out int birthYear))
+                        while (!int.TryParse(Console.ReadLine(), out int birthYear))
                         {
                             Console.WriteLine("Neplatný rok!");
                             break;
@@ -56,7 +56,7 @@ namespace ConsoleApp1
 
                     case '2':
                         Console.WriteLine("Zadej velikost ctverce:");
-                        if (int.TryParse(Console.ReadLine(), out int velikost))
+                        while (int.TryParse(Console.ReadLine(), out int velikost))
                         {
                             for (int i = 0; i < velikost; i++)
                             {
@@ -75,7 +75,7 @@ namespace ConsoleApp1
 
                     case '3':
                         Console.WriteLine("Zadej číslo X:");
-                        if (int.TryParse(Console.ReadLine(), out int x))
+                        while (int.TryParse(Console.ReadLine(), out int x))
                         {
                             for (int i = 1; i <= x; i++)
                             {
